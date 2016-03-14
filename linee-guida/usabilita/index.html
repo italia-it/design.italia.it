@@ -19,8 +19,15 @@
     <meta name="description" content="Progettare il design dei siti web della Pubblica Amministrazione (versione alfa)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <link rel="stylesheet" href="/styles/combined-c9f29bdebb.css">
+    <!--  
+        Titillium web font 
+       *********************
+       Esclusivamente per il sito delle linee guida vengono importati tutti gli stili del web font;
+       si consiglia di rivedere il seguente link limitando le famiglie del font utilizzate nel sito.
+     -->
+    <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css' />
+    
+    <link rel="stylesheet" href="/styles/combined-1e845f327b.css">
 
     <!--[if lt IE 9]>
     <script src="/scripts/combined-94bd8f59ad.i8.js"></script>
@@ -35,16 +42,12 @@
     <![endif]-->
 
     <div class="skiplink sr-only">
-      <div class="container-smaller">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <ul>
-              <li><a href="#main" tabindex="800">Vai al Contenuto</a></li>
-              <li><a href="#footer" tabindex="800">Raggiungi il Footer</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <ul>
+        <li><a accesskey="2" href="#main" tabindex="800">Vai al Contenuto</a></li>
+        <li><a accesskey="3" href="#menu" tabindex="800">Vai alla navigazione del sito (sommario delle linee guida)</a></li>
+        <li><a href="https://github.com/italia-it/design.italia.it" tabindex="800">Vai al repository GitHub delle Linee Guida</a></li>
+<!--        <li><a href="#footer" tabindex="800">Vai al Footer</a></li>-->
+      </ul>
     </div>
 
     <div class="nav-banner">
@@ -52,7 +55,7 @@
         <div class="row">
           <div class="col-md-1 col-md-offset-3">
             <img class="navbar_banner__logo" src="images/loghi/governo.svg" 
-                 alt="Logo Governo Italiano">    
+                 alt="">    
           </div>
           <div class="col-md-6">
             <p class="h4">Governo Italiano</p>
@@ -64,11 +67,12 @@
     <div class="container" id="page_top">
 
 
-<nav class="navbar navbar-default navbar-fixed-top hidden-print" id="navbar">
+<header class="navbar navbar-default navbar-fixed-top hidden-print" id="navbar">
 
   <!-- START * https://github.com/tholman/github-corners * -->
-  <a href="https://github.com/italia-it/designer.italia.it" class="github-corner" 
-     title="Vai alla repository github delle linee guida">
+  <a href="https://github.com/italia-it/design.italia.it" class="github-corner" tabindex="-1"
+     title="Vai al repository github delle linee guida">
+    <span class="sr-only">Vai al repository GitHub delle Linee Guida</span>
     <svg width="140" height="140" viewBox="0 0 250 250" 
          style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;">
     <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -81,18 +85,18 @@
   <div class="navbar-header container">
 
     <div class="row">
-      <a id="nav-toggle" href="#" class="navbar-toggle"
+      <a id="nav-toggle" href="#" class="navbar-toggle" aria-label="apri e chiudi menu" title="navigazione"
          data-toggle="offcanvas" data-target="#navbar" aria-controls="navbar">
         <span></span>
       </a>
 
       <div class="col-sm-1 col-md-2 col-md-offset-2 col-xs-2 col-xs-offset-0 navbar__logo_container">
         <img class="navbar__logo" src="images/loghi/logo-it.svg" 
-             alt="Logo italia.it">
+             alt="">
       </div>
       <div class="col-xs-8 col-xs-offset-0 col-sm-5 col-sm-offset-0 col-md-5 col-md-offset-0 navbar__title_container">
         <h1>
-          <a href="/">
+          <a accesskey="1" href="/" tabindex="-1">
             <span>Linee guida di design per i siti web della PA
             </span>
             <small>Versione alfa</small>
@@ -102,22 +106,30 @@
     </div><!-- row -->
 
   </div><!-- navbar header container -->
-</nav>
+</header>
 
 
-<main id="main" class="row row-offcanvas row-offcanvas-left">
+<div class="row row-offcanvas row-offcanvas-left">
 
   <!--  <a class="lg-github-link btn btn-default" 
-     href="https://github.com/italia-it/designer.italia.it">vai su github</a>-->
+     href="https://github.com/italia-it/design.italia.it">vai su github</a>-->
   
   <div class="col-md-4 sidebar-offcanvas" id="sidebar">
-    <nav class="hidden-print" 
+    <nav class="hidden-print" id="menu" tabindex="0"
      data-spy="_affix" data-offset-top="0" data-offset-bottom="250">
+  
+  <h3 class="sr-only">Sommario delle linee Guida (navigazione del sito):</h3>
+  
   <ul class="nav navgoco">
-    <li>  <a class="btn btn-link" href="/assets/agid-guidelines-2015-11-20-v.1.zip">
+    <li>  <a class="btn btn-link" href="/assets/agid-bootstrap.zip">
         <i class="glyphicon glyphicon-download-alt"></i> scarica i componenti</a> </li>
     <li><a href="/">Home</a></li>
-    <li><a href="/linee-guida/principi-generali">Principi generali</a></li>
+    <li><a href="/linee-guida/il-progetto">Il progetto</a>
+      <ul>
+        <li><a href="/linee-guida/il-progetto/destinatari">
+          Destinatari</a></li>
+      </ul>
+    </li>
     <li><a href="/linee-guida/usabilita">Usabilità</a>
       <ul>
         <li><a href="/linee-guida/usabilita/principi">Principi</a>
@@ -129,10 +141,10 @@
       <a href="/linee-guida/accessibilita">Accessibilità</a>
       <ul>
         <!--  <li><a href="/linee-guida/accessibilita/multimedia">Multimedia</a> -->
-        <li><a href="/linee-guida/accessibilita/mobile-first">Mobile first</a>
         <li><a href="/linee-guida/accessibilita/obiettivi">Obiettivi</a>
       </ul>
     </li>
+    <li><a href="/linee-guida/mobile-first">Mobile first</a>
     <li><a href="/linee-guida/griglie">Griglie</a></li>
     <li><a href="/linee-guida/tipografia">Tipografia</a></li>
     <li><a href="/linee-guida/colori">Colori</a></li>
@@ -146,49 +158,63 @@
 
   </div><!--/.sidebar-offcanvas-->
 
-  <article class="col-sm-12 col-md-8" id="contenuto-principale">
+  <article class="col-sm-12 col-md-8" id="main" tabindex="0">
     <h2>Usabilità</h2>
-    <p>L&#39;usabilità misura l&#39;efficienza delle informazioni e degli strumenti messi a disposizione degli utenti nel raggiungimento di un obiettivo.</p>
-<p>Una buona usabilità di un sito web permette di garantire alla più vasta platea dei cittadini un accesso ai servizi in forma semplice e inclusiva. </p>
-<p>Porre il cittadino reale, con le sue necessità e le sue capacità, al centro della progettazione dei servizi erogati online dalle pubbliche amministrazioni è il primo e necessario passo per l’applicazione dei principi di Human-centered design.</p>
-<p>Scopo dell’usabilità è migliorare la qualità dell’esperienza utente attraverso una navigazione chiara, comprensibile, facile, efficiente e gradevole. Un prodotto usabile, sia esso un oggetto o un sito, consente all&#39;utente di raggiungere il proprio obiettivo con efficacia, efficienzae e soddisfazione, in uno specifico contesto d’uso.</p>
-<p>La definizione di usabilità è costituita dalle seguenti sotto-caratteristiche: </p>
+    <h3 id="definizione">Definizione</h3>
+<p>La facilità d’uso, o usabilità, focalizza la dimensione funzionale dell’interazione tra un sistema, come un portale o un sito web, un’applicazione mobile, e l’utilizzatore. 
+Il Comitato Tecnico di Ergonomia dell’International Standard Organization (www.iso.org) definisce l’usabilità come &quot;il grado in cui un prodotto può essere usato da particolari utenti per raggiungere certi obiettivi con efficacia, efficienza, soddisfazione in uno specifico contesto d’uso&quot; (ISO 9241-210:2010).</p>
+<h3 id="centralit-della-persona">Centralità della persona</h3>
+<p>L’usabilità non è una caratteristica del sistema, ma una proprietà risultante dall’interazione tra sistema e persona. È fondamentale quindi che progettazione, valutazione e funzionamento di un sistema siano guidate dall’analisi e dalla conoscenza articolata dei bisogni, delle caratteristiche degli utilizzatori e dei contesti d’uso. </p>
+<h3 id="usabilit-come-costrutto-misurabile">Usabilità come costrutto misurabile</h3>
+<p>Pur essendo presenti  dimensioni soggettive e qualitative, vi sono proprietà che possono essere misurate e valutate con sistematicità e coerenza, durante la progettazione, la valutazione e la manutenzione del sistema. </p>
+<p>Gli standard identificano i seguenti fattori misurabili:</p>
 <ul>
-<li>riconoscibilità: il prodotto è ritenuto adatto per le esigenze dell’utente;</li>
-<li>apprendibilità: il prodotto è facilmente apprendibile dall’utente per raggiungere i suoi obiettivi; </li>
-<li>operabilità: il prodotto è facilmente operabile e controllabile; </li>
-<li>protezione dagli errori: il sistema protegge gli utenti da eventuali errori; </li>
-<li>esteticità dell’interfaccia: l’interfaccia dà piacere e soddisfazione all’utente;</li>
-<li>accessibilità: il prodotto e il sistema possono essere utilizzati da persone con il più vasto spettro di caratteristiche e capacità (persone con disabilità, incluse quelle dovute all’età).</li>
+<li><p>l’efficacia: è il grado in cui una persona riesce a completare le operazioni richieste per raggiungere il proprio obiettivo in modo corretto e completo. </p>
+</li>
+<li><p>l’efficienza: corrisponde alla quantità di risorse che la persona spende nelle operazioni richieste per raggiungere un dato obiettivo.</p>
+</li>
+<li><p>La soddisfazione soggettiva: è la dimensione più complessa da valutare e da raggiungere, poiché riguarda il livello di gratificazione che l’esperienza d’uso offre. Un sistema può funzionare molto bene ma può non bastare a rendere l’interazione confortevole e piacevole. Rientrano in questa dimensione aspetti come l’estetica, la qualità relazionale.</p>
+</li>
 </ul>
-<p>Per approfondimenti sugli standard ISO:</p>
+<h3 id="il-web">Il Web</h3>
+<p>I principi generali derivati dalla progettazione di software trovano svariate aplicazioni nel mondo web, dove l’usabilità continua a essere un concetto di riferimento per migliorare la qualità dell&#39;esperienza d’uso attraverso una navigazione chiara, contenuti comprensibili, procedure semplici, efficienti, in un gradevole contesto visivo.</p>
+<p>Le ricerche mostrano che oggi il 73% delle persone usa internet dal proprio smartphone (Fonte: TechCrunch). Nell’88% dei casi le persone non ritornano su un sito che non funziona, (fonte: Econsultancy).<br>Questi dati mostrano come l’usabilità (o la sua assenza) possa influenzare l’esito di un servizio, anche semplicemente informativo, erogato da un sistema.</p>
+<div class="lg-callout lg-callout-should">
+<mark>SI DOVREBBE</mark>
+Data l’importanza che l&#39;usabilità riveste nell’interazione tra utente e applicazione web, è necessario riservare la massima attenzione alla 
+progettazione orientata all&#39;usabilità e alla relativa misurazione, mediante un processo di 
+<strong>inclusione degli utenti sin dalla fase di progettazione dei servizi</strong>, secondo un modello centrato sulla persona (human-centered).
+</div>
+
+<p>Il processo di inclusione dell’utente può essere realizzato in diverse metodologie progettuali</p>
 <ul>
-<li><p><a href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=16883">ISO 9241-11:1998</a></p>
-</li>
-<li><p><a href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=52075">ISO 9241-210:2010</a></p>
-</li>
+<li>Human Centered Design </li>
+<li>Metodologie di co-design</li>
+<li>Processi di design partecipativo</li>
+<li>Processi di service design (secondo metodi Human-Centered)</li>
 </ul>
 
   </article>
 
-</main>
+</div>
 
 
 </div><!-- container -->
 
-<div class="lg-partecipa clearfix hidden-print">
-  <p>
+<aside class="lg-partecipa clearfix hidden-print">
+  <h3>
     <i class="glyphicon glyphicon-edit"> </i>
     Vuoi contribuire ? Partecipa creando una issue
-    sulla <a href="https://github.com/italia-it/designer.italia.it">repository GitHub</a><br>
-  </p>
-</div>
-<footer id="footer" class="hidden-print">
+    sul <a href="https://github.com/italia-it/design.italia.it">repository GitHub</a><br>
+  </h3>
+</aside>
+
+<footer id="footer" class="hidden-print" tabindex="0">
   <div class="container">
     <div class="row">
       <div class="col-xs-2 col-sm-2 col-md-1">
         <img class="footer__logo" src="images/loghi/logo-it.svg"
-             alt="Logo italia.it">
+             alt="">
       </div>        
       <div class="col-xs-10 col-sm-10 col-md-5">        
         <p class="footer__title h3">Linee guida di design per i siti web della PA
@@ -197,7 +223,7 @@
       <div class="col-md-6 col-sm-12">
         <a href="http://www.agid.gov.it" target="_blank">
           <img class="footer__logo--agid" src="images/loghi/agid.svg"
-               alt="Logo Agenzia per l'Italia digitale">
+               alt="Agenzia per l'Italia digitale">
         </a>
       </div>
     </div>
@@ -205,6 +231,8 @@
       <ul class="col-xs-12 footer__links clearfix">
         <li><a href="/linee-guida/privacy-policy/" title="privacy policy">Privacy</a></li>
         <li><a href="/linee-guida/note-legali/" title="note legali">Note legali</a></li>
+        <li><a href="/linee-guida/credits/" title="credits">Credits</a></li>
+        <li><a href="/linee-guida/contatti/" title="credits">Contatti</a></li>
       </ul>
     </div>
   </div>
@@ -216,7 +244,7 @@
   Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
 </p>
 
-<script src="/scripts/combined-92f3c0b144.js"></script>
+<script src="/scripts/combined-ca1b583c71.js"></script>
 
 <script>
 (function (b, o, i, l, e, r) {

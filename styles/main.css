@@ -2,7 +2,6 @@
 /* ------------------------------
  * Colori - classi riutilizzabili
 /* ------------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,900,700italic,700,600italic,600,400italic);
 .ita-colore-testo-principale {
   color: #1C2024; }
 
@@ -28,10 +27,10 @@
   background-color: #003366; }
 
 .ita-colore-link-visitato {
-  color: #428fdb; }
+  color: #551A8B; }
 
 .ita-bg-colore-link-visitato {
-  background-color: #428fdb; }
+  background-color: #551A8B; }
 
 .ita-colore-link-negativo {
   color: #65dcdf; }
@@ -46,10 +45,10 @@
   background-color: #00aeb3; }
 
 .ita-colore-link-visitato-negativo {
-  color: #90d7f0; }
+  color: #AA8DC6; }
 
 .ita-bg-colore-link-visitato-negativo {
-  background-color: #90d7f0; }
+  background-color: #AA8DC6; }
 
 .ita-colore-testo-evidenziato {
   color: #B2EBED; }
@@ -70,10 +69,10 @@
   background-color: #F0F0F0; }
 
 .ita-colore-alert {
-  color: #FF0000; }
+  color: #B50000; }
 
 .ita-bg-colore-alert {
-  background-color: #FF0000; }
+  background-color: #B50000; }
 
 .ita-colore-blu-italia {
   color: #0066CC; }
@@ -285,10 +284,12 @@
 .ita-bg-colore-testa-di-moro {
   background-color: #967E6A; }
 
-/*  Titillium web font 
- *  ----------------------
- *  Esclusivamente per il sito delle linee guida vengono importati tutti gli stili del web font;
- *  si consiglia di rivedere il seguente import limitando le famiglie del font utilizzate nel sito.
+/* 
+ * FIX: utilizzare <link> nel template HTML
+ *    http://stackoverflow.com/questions/12316501/including-google-web-fonts-link-or-import
+ */
+/* 
+ * @import url(//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,900,700italic,700,600italic,600,400italic);
  */
 /* ITA  */
 /* ITA  */
@@ -1571,21 +1572,21 @@ mark,
 
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #004c99; }
+  color: #004d99; }
 
 .text-success {
   color: #006366; }
 
 a.text-success:hover,
 a.text-success:focus {
-  color: #003133; }
+  color: #003233; }
 
 .text-info {
   color: #006366; }
 
 a.text-info:hover,
 a.text-info:focus {
-  color: #003133; }
+  color: #003233; }
 
 .text-warning {
   color: #685815; }
@@ -1609,7 +1610,7 @@ a.text-danger:focus {
 
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #004c99; }
+  background-color: #004d99; }
 
 .bg-success {
   background-color: #c6f3f5; }
@@ -1630,7 +1631,7 @@ a.bg-info:focus {
 
 a.bg-warning:hover,
 a.bg-warning:focus {
-  background-color: #ffe66c; }
+  background-color: #ffe76c; }
 
 .bg-danger {
   background-color: #ffcbcb; }
@@ -2487,7 +2488,7 @@ table th[class*="col-"] {
 .table-hover > tbody > tr.warning:hover > td,
 .table-hover > tbody > tr:hover > .warning,
 .table-hover > tbody > tr.warning:hover > th {
-  background-color: #ffeb85; }
+  background-color: #ffeb86; }
 
 .table > thead > tr > td.danger, article table > thead > tr > td.danger,
 .table > thead > tr > th.danger, article table > thead > tr > th.danger,
@@ -2934,7 +2935,7 @@ select[multiple].input-lg,
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   .has-success .form-control:focus {
-    border-color: #003133;
+    border-color: #003233;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #00c6cc;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #00c6cc; }
 
@@ -3302,19 +3303,19 @@ fieldset[disabled] a.btn {
 .btn-warning {
   color: #685815;
   background-color: #ffef9f;
-  border-color: #ffeb85; }
+  border-color: #ffeb86; }
   .btn-warning:focus, .btn-warning.focus {
     color: #685815;
-    background-color: #ffe66c;
+    background-color: #ffe76c;
     border-color: #ffd606; }
   .btn-warning:hover {
     color: #685815;
-    background-color: #ffe66c;
+    background-color: #ffe76c;
     border-color: #ffe148; }
   .btn-warning:active, .btn-warning.active,
   .open > .btn-warning.dropdown-toggle {
     color: #685815;
-    background-color: #ffe66c;
+    background-color: #ffe76c;
     border-color: #ffe148; }
     .btn-warning:active:hover, .btn-warning:active:focus, .btn-warning:active.focus, .btn-warning.active:hover, .btn-warning.active:focus, .btn-warning.active.focus,
     .open > .btn-warning.dropdown-toggle:hover,
@@ -3334,7 +3335,7 @@ fieldset[disabled] a.btn {
   fieldset[disabled] .btn-warning:active,
   fieldset[disabled] .btn-warning.active {
     background-color: #ffef9f;
-    border-color: #ffeb85; }
+    border-color: #ffeb86; }
   .btn-warning .badge {
     color: #ffef9f;
     background-color: #685815; }
@@ -4547,7 +4548,7 @@ a.label:hover, a.label:focus {
 .label-primary {
   background-color: #0066CC; }
   .label-primary[href]:hover, .label-primary[href]:focus {
-    background-color: #004c99; }
+    background-color: #004d99; }
 
 .label-success {
   background-color: #5cb85c; }
@@ -4562,7 +4563,7 @@ a.label:hover, a.label:focus {
 .label-warning {
   background-color: #ffef9f; }
   .label-warning[href]:hover, .label-warning[href]:focus {
-    background-color: #ffe66c; }
+    background-color: #ffe76c; }
 
 .label-danger {
   background-color: #ffcbcb; }
@@ -4700,7 +4701,7 @@ a.thumbnail.active {
   .alert-success hr {
     border-top-color: #00acb1; }
   .alert-success .alert-link {
-    color: #003133; }
+    color: #003233; }
 
 .alert-info {
   background-color: #c6f3f5;
@@ -4709,7 +4710,7 @@ a.thumbnail.active {
   .alert-info hr {
     border-top-color: #00acb1; }
   .alert-info .alert-link {
-    color: #003133; }
+    color: #003233; }
 
 .alert-warning, .lg-versione-alpha {
   background-color: #ffef9f;
@@ -4722,10 +4723,10 @@ a.thumbnail.active {
 
 .alert-danger {
   background-color: #ffcbcb;
-  border-color: #ff0000;
+  border-color: #b50000;
   color: #1e1212; }
   .alert-danger hr {
-    border-top-color: #e60000; }
+    border-top-color: #9c0000; }
   .alert-danger .alert-link {
     color: black; }
 
@@ -4973,7 +4974,7 @@ button.list-group-item-warning {
   button.list-group-item-warning:hover,
   button.list-group-item-warning:focus {
     color: #685815;
-    background-color: #ffeb85; }
+    background-color: #ffeb86; }
   a.list-group-item-warning.active, a.list-group-item-warning.active:hover, a.list-group-item-warning.active:focus,
   button.list-group-item-warning.active,
   button.list-group-item-warning.active:hover,
@@ -5344,18 +5345,18 @@ button.list-group-item-danger {
     border-bottom-color: #e5ce23; }
 
 .panel-danger {
-  border-color: #ff0000; }
+  border-color: #b50000; }
   .panel-danger > .panel-heading {
     color: #1e1212;
     background-color: #ffcbcb;
-    border-color: #ff0000; }
+    border-color: #b50000; }
     .panel-danger > .panel-heading + .panel-collapse > .panel-body {
-      border-top-color: #ff0000; }
+      border-top-color: #b50000; }
     .panel-danger > .panel-heading .badge {
       color: #ffcbcb;
       background-color: #1e1212; }
   .panel-danger > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #ff0000; }
+    border-bottom-color: #b50000; }
 
 .embed-responsive {
   position: relative;
@@ -6186,8 +6187,7 @@ html {
 
 p, li {
   font-size: 18px;
-  line-height: 28px;
-  line-height: 2.8rem;
+  line-height: 1.5;
   /*  @media screen and (min-width: $screen-xs-min) {
     font-size: ceil($font-size-base * 1.1);
   }*/ }
@@ -6204,8 +6204,7 @@ ol, li {
 blockquote, blockquote p {
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 28px;
-  line-height: 2.8rem;
+  line-height: 1.5;
   font-style: italic; }
 
 /*
@@ -6214,40 +6213,40 @@ blockquote, blockquote p {
  *  Riduce di una percentuale le dimensioni degli header 
  *  sugli schermi più piccoli
  */
-h1 {
+h1, .h1 {
   line-height: 86px;
   line-height: 8.6rem;
   font-weight: bold; }
   @media screen and (max-width: 768px) {
-    h1 {
+    h1, .h1 {
       font-size: 5rem;
       line-height: 6rem; } }
 
-h2 {
+h2, .h2 {
   line-height: 72px;
   line-height: 7.2rem;
   font-weight: bold; }
   @media screen and (max-width: 768px) {
-    h2 {
+    h2, .h2 {
       font-size: 4rem;
       line-height: 5rem; } }
 
-h3 {
+h3, .h3 {
   line-height: 48px;
   line-height: 4.8rem;
   font-weight: bold; }
 
-h4 {
+h4, .h4 {
   line-height: 28px;
   line-height: 2.8rem;
   font-weight: bold; }
 
-h5 {
+h5, .h5 {
   line-height: 28px;
   line-height: 2.8rem;
   font-variant: small-caps; }
 
-h6 {
+h6, .h6 {
   font-weight: bold;
   line-height: 28px;
   line-height: 2.8rem; }
@@ -6282,6 +6281,24 @@ h6 {
   text-transform: lowercase;
   font-weight: bold; }
 
+a.btn-default:visited {
+  color: #004A4D; }
+
+a.btn-primary:visited {
+  color: #004A4D; }
+
+a.btn-danger:visited {
+  color: #1e1212; }
+
+a.btn-success:visited {
+  color: #fff; }
+
+a.btn-info:visited {
+  color: #006366; }
+
+a.btn-warning:visited {
+  color: #685815; }
+
 .btn-default:active:active, .btn-default.active, .btn-primary:active:active, .btn-primary.active {
   color: #65DDE0;
   background-color: #004A4D;
@@ -6311,7 +6328,7 @@ h6 {
 .form-control {
   padding: 24px 12px; }
   .has-error .form-control {
-    border-color: #ff0000; }
+    border-color: #b50000; }
   .has-warning .form-control {
     border-color: #e5ce23; }
   .has-success .form-control {
@@ -6335,6 +6352,21 @@ option {
   option:hover {
     background-color: #65DDE0; }
 
+.skiplink li {
+  list-style-type: none; }
+
+.skiplink--focused {
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  background: white;
+  text-align: center;
+  width: 100%; }
+
+.skiplink--focused a:focus {
+  background: #0066CC !important;
+  color: #fff !important; }
+
 /*
  * Bottone scroll to top
  * --------------------------------------------------------------
@@ -6349,7 +6381,7 @@ option {
   right: 20px;
   text-align: center;
   text-decoration: none;
-  z-index: 2147483647;
+  z-index: 9999;
   background: #00264d;
   border: 2px solid white;
   border-radius: 50% 50% 50% 50%;
@@ -6385,6 +6417,8 @@ p .badge {
   margin-top: -0.5rem; }
 
 .badge-container {
+  position: relative;
+  display: inline-block;
   margin-right: 24px;
   margin-right: 2.4rem; }
   .badge-container .glyphicon, .badge-container .scrollto_top span:before, .scrollto_top .badge-container span:before, .badge-container .navgoco li > a > span:after, .navgoco .badge-container li > a > span:after, .badge-container.glyphicon, .scrollto_top span.badge-container:before, .navgoco li > a > span.badge-container:after {
@@ -6964,9 +6998,15 @@ footer {
  *  Bootstrap tweaks
  *  -----------------
  */
-main {
+#main {
   min-height: 500px;
   min-height: 50rem; }
+
+[tabindex="0"]:focus {
+  outline: none; }
+
+.navgoco [tabindex="0"]:focus {
+  outline: #ff8c00 solid 3px !important; }
 
 .container {
   min-width: 200px; }
@@ -6985,8 +7025,7 @@ article h3,
 article h4,
 article h5,
 article h6 {
-  max-width: 550px;
-  max-width: 55rem; }
+  max-width: 31em; }
 
 article table {
   /*  @extend .table-bordered;*/
@@ -7004,6 +7043,20 @@ article table {
  *  Stili custom del sito delle Linee Guida
  *  ---------------------------------------
  */
+#main a {
+  text-decoration: underline; }
+  #main a:focus {
+    background: #0066CC !important;
+    color: #fff !important; }
+
+#footer a:focus {
+  outline: #ff8c00 solid 3px !important;
+  background: none !important;
+  color: inherit !important; }
+
+#main a.btn {
+  text-decoration: none; }
+
 .lg-modal {
   margin: auto;
   background: white;
@@ -7039,9 +7092,12 @@ article table {
   background: #66a5e3;
   min-height: 100px;
   min-height: 10rem; }
-  .lg-partecipa p {
-    margin: auto; }
-    .lg-partecipa p i {
+  .lg-partecipa p, .lg-partecipa h3 {
+    margin: auto;
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: normal; }
+    .lg-partecipa p i, .lg-partecipa h3 i {
       font-size: 15px;
       font-size: 1.5rem; }
   .lg-partecipa a {
@@ -7158,6 +7214,10 @@ article table {
   margin: 10px 0 20px 0;
   margin: 1rem 0 2rem 0; }
 
+.lg-example-result .nav {
+  padding-bottom: 10px;
+  padding-bottom: 1rem; }
+
 .lg-example-result .well {
   border: none;
   background-color: white;
@@ -7195,8 +7255,7 @@ article table {
   text-transform: lowercase; }
 
 .lg-example-colore-blu-italia div {
-  max-width: 550px;
-  max-width: 55rem; }
+  max-width: 31em; }
   .lg-example-colore-blu-italia div .h3, .lg-example-colore-blu-italia div .h4 {
     margin: auto;
     max-width: 80%;
