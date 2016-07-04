@@ -27,7 +27,7 @@
      -->
     <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css' />
     
-    <link rel="stylesheet" href="/styles/combined-8bfbb57790.css">
+    <link rel="stylesheet" href="/styles/combined-5c6544bc2c.css">
 
     <!--[if lt IE 9]>
     <script src="/scripts/combined-94bd8f59ad.i8.js"></script>
@@ -123,46 +123,63 @@
 
   <h2 class="sr-only">Sommario delle linee Guida (navigazione del sito):</h2>
 
-  <ul class="nav navgoco">
-    <li>  <a class="btn btn-link" href="/assets/agid-bootstrap.zip">
-        <i class="glyphicon glyphicon-download-alt"></i> scarica i componenti</a> </li>
-    <li><a href="/">Home</a></li>
-    <li><a href="/linee-guida/il-progetto">Il progetto</a>
-      <ul>
-        <li><a href="/linee-guida/il-progetto/destinatari">
-            Destinatari</a></li>
-      </ul>
+  <ul class="nav navmenu">
+    <li>
+      <a class="btn btn-link" href="https://github.com/italia-it/ita-bootstrap/archive/master.zip">
+        <i class="glyphicon glyphicon-download-alt"></i> scarica i componenti</a>
     </li>
+    <li><a href="/">Home</a></li>
+    <li>
+      <a href="/linee-guida/il-progetto">Il progetto</a>
+    </li>
+    <!-- TODO <li><a href="/linee-guida/riferimenti-normativi">Riferimenti normativi</a></li> -->
     <li><a href="/linee-guida/usabilita">Usabilità</a>
       <ul>
-        <li><a href="/linee-guida/usabilita/principi">Principi</a>
-        <li><a href="/linee-guida/usabilita/contenuti">Contenuti</a>
-        <li><a href="/linee-guida/usabilita/gruppo-di-lavoro">Misurazione</a>
+        <li>
+          <a href="/linee-guida/usabilita/principi">Principi</a>
+        </li>
+        <li>
+          <a href="/linee-guida/usabilita/misurazione">Misurazione</a>
+        </li>
       </ul>
     </li>
     <li>
       <a href="/linee-guida/accessibilita">Accessibilità</a>
       <ul>
         <!--  <li><a href="/linee-guida/accessibilita/multimedia">Multimedia</a> -->
-        <li><a href="/linee-guida/accessibilita/obiettivi">Obiettivi</a>
+        <li>
+          <a href="/linee-guida/accessibilita/obiettivi">Obiettivi</a>
+        </li>
       </ul>
     </li>
-    <li><a href="/linee-guida/mobile-first">Mobile first</a>
-    <li><a href="/linee-guida/griglie">Griglie</a></li>
+    <li><a href="/linee-guida/contenuti">Gestione contenuti</a></li>
+    <li><a href="/linee-guida/infoarchitettura">Architettura dell'informazione</a></li>
+    <li><a href="/linee-guida/header">Header</a></li>
+    <li><a href="/linee-guida/footer">Footer</a></li>
+    <li><a href="/linee-guida/layout">Layout</a>
+      <ul>
+        <li><a href="/linee-guida/layout/mobile-first">Mobile first</a></li>
+        <li><a href="/linee-guida/layout/griglie">Griglie</a></li>
+        <li><a href="/linee-guida/layout/homepage">Home page</a></li>
+        <li><a href="/linee-guida/layout/carousel">Carousel</a></li>
+      </ul>
+    </li>
     <li><a href="/linee-guida/tipografia">Tipografia</a></li>
     <li><a href="/linee-guida/colori">Colori</a></li>
     <li><a href="/linee-guida/bottoni">Bottoni</a>
     <li><a href="/linee-guida/form">Form</a>
     <li><a href="/linee-guida/iconografia">Iconografia</a></li>
-    <li><a href="/linee-guida/componenti">Componenti</a>
+    <li>
+      <a href="/linee-guida/componenti">Componenti</a>
       <ul>
-        <li><a href="/linee-guida/componenti/spid">SPID</a>
+        <li>
+          <a href="/linee-guida/componenti/spid">SPID</a>
           <ul>
-            <li><a href="/linee-guida/componenti/spid/loghi">Loghi</a>
-            <li><a href="/linee-guida/componenti/spid/icone">Icone</a>
-            <li><a href="/linee-guida/componenti/spid/toolkit-service-provider">Service provider</a>
-            <li><a href="/linee-guida/componenti/spid/toolkit-identity-provider">Identity provider</a>
-            <li><a href="/linee-guida/componenti/spid/toolkit-altri-elementi">Altri elementi</a>
+            <li><a href="/linee-guida/componenti/spid/loghi">Loghi</a></li>
+            <li><a href="/linee-guida/componenti/spid/icone">Icone</a></li>
+            <li><a href="/linee-guida/componenti/spid/toolkit-service-provider">Service provider</a></li>
+            <li><a href="/linee-guida/componenti/spid/toolkit-identity-provider">Identity provider</a></li>
+            <li><a href="/linee-guida/componenti/spid/toolkit-altri-elementi">Altri elementi</a></li>
           </ul>
         </li>
       </ul>
@@ -176,39 +193,34 @@
 
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
     <h2>Usabilità</h2>
-    <h3 id="definizione">Definizione</h3>
+    <p>Le ricerche mostrano che oggi il 73% delle persone usa internet dal proprio smartphone (Fonte: TechCrunch). Nell’88% dei casi le persone non ritornano su un sito che non funziona, (fonte: Econsultancy). Questi dati mostrano come l’usabilità (o la sua assenza) possa influenzare in modo determinante l’esito di un servizio, anche semplicemente informativo, erogato da un sistema.</p>
+<h3 id="definizione">Definizione</h3>
 <p>La facilità d’uso, o usabilità, focalizza la dimensione funzionale dell’interazione tra un sistema, come un portale o un sito web, un’applicazione mobile, e l’utilizzatore. 
 Il Comitato Tecnico di Ergonomia dell’International Standard Organization (www.iso.org) definisce l’usabilità come &quot;il grado in cui un prodotto può essere usato da particolari utenti per raggiungere certi obiettivi con efficacia, efficienza, soddisfazione in uno specifico contesto d’uso&quot; (ISO 9241-210:2010).</p>
 <h3 id="centralit-della-persona">Centralità della persona</h3>
 <p>L’usabilità non è una caratteristica del sistema, ma una proprietà risultante dall’interazione tra sistema e persona. È fondamentale quindi che progettazione, valutazione e funzionamento di un sistema siano guidate dall’analisi e dalla conoscenza articolata dei bisogni, delle caratteristiche degli utilizzatori e dei contesti d’uso. </p>
-<h3 id="usabilit-come-costrutto-misurabile">Usabilità come costrutto misurabile</h3>
-<p>Pur essendo presenti  dimensioni soggettive e qualitative, vi sono proprietà che possono essere misurate e valutate con sistematicità e coerenza, durante la progettazione, la valutazione e la manutenzione del sistema. </p>
-<p>Gli standard identificano i seguenti fattori misurabili:</p>
+<h3 id="user-centered-design">User-centered design</h3>
+<p>Lo user centered design è un insieme di tecniche usate per far emergere i bisogni effettivi delle persone per cui si sta progettando un contenuto, coinvolgendo le persone stesse nel processo di progettazione. Per &quot;persone&quot; si intendono tutti i portatori di interesse (stakeholder) del progetto.
+Nel caso della Pubblica Amministrazione:</p>
 <ul>
-<li><p>l’efficacia: è il grado in cui una persona riesce a completare le operazioni richieste per raggiungere il proprio obiettivo in modo corretto e completo. </p>
-</li>
-<li><p>l’efficienza: corrisponde alla quantità di risorse che la persona spende nelle operazioni richieste per raggiungere un dato obiettivo.</p>
-</li>
-<li><p>La soddisfazione soggettiva: è la dimensione più complessa da valutare e da raggiungere, poiché riguarda il livello di gratificazione che l’esperienza d’uso offre. Un sistema può funzionare molto bene ma può non bastare a rendere l’interazione confortevole e piacevole. Rientrano in questa dimensione aspetti come l’estetica, la qualità relazionale.</p>
-</li>
+<li>Cittadini</li>
+<li>Aziende</li>
+<li>Dipendenti di altre amministrazioni o istituzioni</li>
+<li>Committenti</li>
 </ul>
-<h3 id="il-web">Il Web</h3>
-<p>I principi generali derivati dalla progettazione di software trovano svariate aplicazioni nel mondo web, dove l’usabilità continua a essere un concetto di riferimento per migliorare la qualità dell&#39;esperienza d’uso attraverso una navigazione chiara, contenuti comprensibili, procedure semplici, efficienti, in un gradevole contesto visivo.</p>
-<p>Le ricerche mostrano che oggi il 73% delle persone usa internet dal proprio smartphone (Fonte: TechCrunch). Nell’88% dei casi le persone non ritornano su un sito che non funziona, (fonte: Econsultancy).<br>Questi dati mostrano come l’usabilità (o la sua assenza) possa influenzare l’esito di un servizio, anche semplicemente informativo, erogato da un sistema.</p>
+<p>Le tecniche di ricerca più utilizzate nello user centered design consistono in:</p>
+<ul>
+<li>Realizzazione di interviste con gli utenti del sito interessati</li>
+<li>Profilazione di utenti tipo, o personas</li>
+<li>Definizione di scenari di utilizzo del sitoi</li>
+<li>Card sorting delle sezioni del sito</li>
+<li>Test di usabilità strutturati, condotti con persone fisiche in ambiente controllato</li>
+</ul>
 <div class="lg-callout lg-callout-should">
 <mark>SI DOVREBBE</mark>
-Data l’importanza che l&#39;usabilità riveste nell’interazione tra utente e applicazione web, è necessario riservare la massima attenzione alla 
-progettazione orientata all&#39;usabilità e alla relativa misurazione, mediante un processo di 
-<strong>inclusione degli utenti sin dalla fase di progettazione dei servizi</strong>, secondo un modello centrato sulla persona (human-centered).
+Data l’importanza che l&#39;usabilità riveste nell’interazione tra utente e applicazione web, è necessario riservare la massima attenzione alla progettazione orientata all&#39;usabilità e alla relativa misurazione, mediante un processo di <strong>inclusione degli utenti sin dalla fase di progettazione dei servizi</strong>, secondo un modello centrato sulla persona (human-centered).
 </div>
 
-<p>Il processo di inclusione dell’utente può essere realizzato in diverse metodologie progettuali</p>
-<ul>
-<li>Human Centered Design </li>
-<li>Metodologie di co-design</li>
-<li>Processi di design partecipativo</li>
-<li>Processi di service design (secondo metodi Human-Centered)</li>
-</ul>
 
   </article>
 
@@ -262,7 +274,7 @@ progettazione orientata all&#39;usabilità e alla relativa misurazione, mediante
   Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
 </p>
 
-<script src="/scripts/combined-0f4dad0002.js"></script>
+<script src="/scripts/combined-b95a138e9e.js"></script>
 
 <script>
 (function (b, o, i, l, e, r) {
