@@ -19,15 +19,15 @@
     <meta name="description" content="Progettare il design dei siti web della Pubblica Amministrazione (versione alfa)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!--  
-        Titillium web font 
+    <!--
+        Titillium web font
        *********************
        Esclusivamente per il sito delle linee guida vengono importati tutti gli stili del web font;
        si consiglia di rivedere il seguente link limitando le famiglie del font utilizzate nel sito.
      -->
     <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css' />
-    
-    <link rel="stylesheet" href="/styles/combined-5c6544bc2c.css">
+
+    <link rel="stylesheet" href="/styles/combined-3e2c8ba3a7.css">
 
     <!--[if lt IE 9]>
     <script src="/scripts/combined-94bd8f59ad.i8.js"></script>
@@ -43,8 +43,8 @@
 
     <div class="skiplink sr-only">
       <ul>
-        <li><a accesskey="2" href="#main">Vai al Contenuto</a></li>
-        <li><a accesskey="3" href="#menu">Vai alla navigazione del sito (sommario delle linee guida)</a></li>
+        <li><a accesskey="2" href="/linee-guida/layout/griglie/#main">Vai al Contenuto</a></li>
+        <li><a accesskey="3" href="/linee-guida/layout/griglie/#menu">Vai alla navigazione del sito (sommario delle linee guida)</a></li>
         <li><a href="https://github.com/italia-it/designer.italia.it">Vai al repository GitHub delle Linee Guida</a></li>
 <!--        <li><a href="#footer">Vai al Footer</a></li>-->
       </ul>
@@ -66,7 +66,6 @@
     </div>
 
     <div class="container" id="page_top">
-
 
 <header class="navbar navbar-default navbar-fixed-top hidden-print" id="navbar">
 
@@ -154,6 +153,7 @@
     </li>
     <li><a href="/linee-guida/contenuti">Gestione contenuti</a></li>
     <li><a href="/linee-guida/infoarchitettura">Architettura dell'informazione</a></li>
+    <li><a href="/linee-guida/dispositivi">Dispositivi</a>
     <li><a href="/linee-guida/header">Header</a></li>
     <li><a href="/linee-guida/footer">Footer</a></li>
     <li><a href="/linee-guida/layout">Layout</a>
@@ -193,132 +193,58 @@
 
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
     <h2>Griglie</h2>
-    <p>All’interno dello spazio a disposizione l’organizzazione del contenuto deve essere strutturata seguendo un sistema di griglie responsive per mantenere una coerente esperienza utente. La griglia rappresenta la struttura invisibile che permette di organizzare i contenuti della pagina.</p>
-<p>Una griglia di impaginazione consiste in colonne di testo (o immagini) separate da spazi <em>intercolonna</em> e contornate dai margini della pagina. Le dimensioni delle colonne della griglia saranno flessibili in funzione del viewport (ovvero, la dimensione totale della regione di sito visibile all&#39;interno del browser, delimitata dall&#39;ampiezza del browser stesso). </p>
-<h3 id="costruzione">Come costruire una griglia conforme</h3>
-
-<p>Utilizzando Bootstrap come framework, prendiamo in considerazione il suo &quot;grid system&quot; come strumento di elezione per creare le griglie di impaginazione.</p>
+    <p>All’interno dello spazio a disposizione l’organizzazione del contenuto deve essere strutturata
+seguendo un sistema di <strong>griglie responsive</strong> per mantenere una efficace esperienza utente
+trasversalmente ai dispositivi utilizzati.</p>
+<p>La griglia rappresenta la struttura invisibile che permette di organizzare i contenuti della pagina.
+Una griglia di impaginazione consiste in <strong>colonne</strong> di testo (e/o immagini) separate da spazi intercolonna
+e contornate dai margini della pagina.</p>
+<p>Le dimensioni delle colonne vanno adattate ai cambiamenti della <a href="/linee-guida/glossario">viewport</a>:
+ogni colonna occuperà una percentuale di spazio specifica a seconda che sia visualizzata
+su dispositivi desktop, tablet, o smartphone. La ridisposizione dei contenuti,
+a seconda delle dimensione dello schermo, garantisce che i testi siano leggibili
+anche sugli schermi più piccoli e l&#39;interazione utente (es. form, controlli dinamici)
+rimanga agevole.</p>
+<h3 id="impostazioni-della-griglia-di-costruzione-consigliata">Impostazioni della griglia di costruzione consigliata</h3>
 <ul>
-<li>Le righe (che hanno come classe <code>.row</code> ) devono essere collocate all&#39;interno di un elemento <code>.container</code> a larghezza fissa oppure di un elemento <code>.container</code> fluido.</li>
-<li>Gli elementi di riga <code>.row</code> devono essere utilizzati esclusivamente per creare gruppi orizzontali di colonne.</li>
-<li>Soltanto dentro le colonne possono essere annidati ulteriori sistemi di &quot;righe e colonne&quot;</li>
-<li>Il contenuto (testo e foto) va collocato all&#39;interno delle colonne.</li>
-<li>Le colonne avranno come prefisso di classe <code>.col-*</code></li>
-<li>Le colonne rappresentano &quot;porzioni&quot; della larghezza complessiva del contenitore.</li>
-<li>Ogni colonna potrà essere identificata con una classe specifica per determinare se quella porzione di spazio sia attribuibile, ad esempio, solo a dispositivi desktop, o tablet, o smartphone. Per questo motivo la classe di ciascuna colonna sarà sempre dotata sia di un suffisso corrispondente al <em>breakpoint</em> di riferimento (in ordine crescente dal minore al maggiore: <code>-xs-, -sm-, -md-, -lg-</code>), sia del valore corrispondente ad una frazione di 12, che rappresenta la porzione di larghezza occupata da quella colonna.
-Queste classi si applicano per intercettare dispositivi con larghezza dello schermo maggiore o uguale alle dimensioni del breakpoint di riferimento. Pertanto, la classe <code>.col-md-*</code> stabilirà la larghezza di quella colonna sia per il breakpoint corrispondente al valore &quot;-md-&quot; sia per breakpoint superiori (a meno che non sia presente anche una classe <code>.col-lg-*</code>).
-
-Per esempio: in una riga potrebbero esserci tre elementi <code>.col-xs-4</code> che corrispondono a tre colonne di larghezza pari a 4/12 (un terzo) ciascuna. Indicando <code>-xs-</code> come suffisso di breakpoint, significa che quella colonna avrà la stessa proporzione sia sui display più piccoli che su quelli più grandi. Se invece nella stessa riga posizioneremo tre elementi con classe <code>.col-lg-4</code> significa che ciascuna delle tre colonne occuperà uno spazio pari a 4/12 SOLTANTO sui display più grandi, mentre con viewport inferiori quella stessa colonna occuperà il 100% dello spazio, dato che non è stata definita nessuna proporzione per i breakpoint inferiori.</li>
-<li>Ogni colonna può avere un &quot;interspazio&quot; o <em>gutter</em>, che viene attribuito via css tramite <code>padding</code></li>
+<li>Larghezza massima del contenitore: 1440 px</li>
+<li>Spazio intercolonna (<em>gutter</em>): 16 px a tutte le risoluzioni.</li>
 </ul>
-
-
-<h4 id="costruzione">Impostazioni della griglia di costruzione consigliata</h4>
-
-
-<div class="table-responsive">
-  <table class="table table-bordered table-striped">
-    <thead>
-      <tr>
-        <th></th>
-        <th> Schermi molto piccoli <small>Smartphone ( &lt; 768px)</small> </th>
-        <th> Schermi piccoli <small>Tablet ( ≥ 768px)</small> </th>
-        <th> Schermi media dimensione <small>Netbook ( ≥ 992px)</small> </th>
-        <th> Schermi grandi <small>Desktop ( ≥ 1440px)</small> </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th class="text-nowrap" scope="row">Larghezza del .container</th>
-        <td>Auto</td>
-        <td>Auto</td>
-        <td>Auto</td>
-        <td>1440px <small>compresi i &quot;padding&quot; esterni del .container</small></td>
-      </tr>
-      <tr>
-        <th class="text-nowrap" scope="row">padding-left e padding-right del .container</th>
-        <td>16 px</td>
-        <td>16 px</td>
-        <td>24 px</td>
-        <td>24 px</td>
-      </tr>
-      <tr>
-        <th class="text-nowrap" scope="row">Prefisso classe colonna</th>
-        <td><code>.col-xs-</code></td>
-        <td><code>.col-sm-</code></td>
-        <td><code>.col-md-</code></td>
-        <td><code>.col-lg-</code></td>
-      </tr>
-      <tr>
-        <th class="text-nowrap" scope="row">Numero di colonne</th>
-        <td colspan="4">12</td>
-      </tr>
-      <tr>
-        <th class="text-nowrap" scope="row">Intercolonna o &quot;gutter&quot;</th>
-        <td colspan="4">16 px</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-
-<p>Sul formato smartphone è prevista la collocazione di una sola colonna.
-Sui successivi breakpoint (tablet e desktop), si potrà optare per un’impaginazione basata su un numero maggiore di colonne, con uno spazio fisso intercolonna (&quot;gutter&quot;) di 16 px.
-Il <code>.container</code> avrà dei margini esterni (&quot;padding&quot;) di 24 px per i breakpoint &quot;desktop&quot; e &quot;netbook&quot; e di 16 px per i breakpoint &quot;tablet&quot; e &quot;smartphone&quot;.</p>
-<!--
-<figure>
-  ![](/images/tavola_2.png)
-  <figcaption>Figura 1 </figcaption>
-</figure>
--->
-<h3 id="esempio-di-griglia-responsive">Esempio di griglia responsive</h3>
-<p>Segue un esempio di <a href="http://getbootstrap.com/css/#grid">griglia &quot;responsive&quot;</a> ottenuto 
-applicando il CSS di Bootstrap e utilizzando le classi <code>container, row, col-*</code></p>
-<pre><code class="lang-markup">  &lt;div class=&quot;lg-example-grid container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-12 col-xs-12&quot;&gt;
-        &lt;div&gt;12/12&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-xs-6&quot;&gt;&lt;div&gt;6/12&lt;/div&gt;&lt;/div&gt;
-      &lt;div class=&quot;col-xs-6&quot;&gt;&lt;div&gt;6/12&lt;/div&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-4 col-xs-12&quot;&gt;
-        &lt;div class=&quot;hidden-xs hidden-sm&quot;&gt;4/12&lt;/div&gt;
-        &lt;div class=&quot;visible-sm visible-xs&quot;&gt;12/12&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-md-4 col-xs-12&quot;&gt;
-        &lt;div class=&quot;hidden-xs hidden-sm&quot;&gt;4/12&lt;/div&gt;
-        &lt;div class=&quot;visible-sm visible-xs&quot;&gt;12/12&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-md-4 col-xs-12&quot;&gt;
-        &lt;div class=&quot;hidden-xs hidden-sm&quot;&gt;4/12&lt;/div&gt;
-        &lt;div class=&quot;visible-sm visible-xs&quot;&gt;12/12&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col-md-3 col-xs-6&quot;&gt;
-        &lt;div class=&quot;hidden-xs hidden-sm&quot;&gt;3/12&lt;/div&gt;
-        &lt;div class=&quot;visible-sm visible-xs&quot;&gt;6/12&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-md-3 col-xs-6&quot;&gt;
-        &lt;div class=&quot;hidden-xs hidden-sm&quot;&gt;3/12&lt;/div&gt;
-        &lt;div class=&quot;visible-sm visible-xs&quot;&gt;6/12&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-md-3 col-xs-6&quot;&gt;
-        &lt;div class=&quot;hidden-xs hidden-sm&quot;&gt;3/12&lt;/div&gt;
-        &lt;div class=&quot;visible-sm visible-xs&quot;&gt;6/12&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-md-3 col-xs-6&quot;&gt;
-        &lt;div class=&quot;hidden-xs hidden-sm&quot;&gt;3/12&lt;/div&gt;
-        &lt;div class=&quot;visible-sm visible-xs&quot;&gt;6/12&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-</code></pre>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Breakpoint</th>
+<th>Padding laterale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Smartphone<br>(&lt; 768 px)</td>
+<td>16 px</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Tablet<br>(&lt; 992 px)</td>
+<td>16 px</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Desktop<br>(&lt; 1440 px)</td>
+<td>24 px</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Desktop<br>(&gt; 1440 px)</td>
+<td>24 px</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
   </article>
 
@@ -343,8 +269,8 @@ applicando il CSS di Bootstrap e utilizzando le classi <code>container, row, col
       <div class="col-xs-2 col-sm-2 col-md-1">
         <img class="footer__logo" src="images/loghi/logo-it.svg"
              alt="">
-      </div>        
-      <div class="col-xs-10 col-sm-10 col-md-5">        
+      </div>
+      <div class="col-xs-10 col-sm-10 col-md-5">
         <p class="footer__title h3">Linee guida di design per i siti web della PA
           <small>Versione alfa</small></p>
       </div>
@@ -360,6 +286,7 @@ applicando il CSS di Bootstrap e utilizzando le classi <code>container, row, col
         <li><a href="/linee-guida/privacy-policy/" title="privacy policy">Privacy</a></li>
         <li><a href="/linee-guida/note-legali/" title="note legali">Note legali</a></li>
         <li><a href="/linee-guida/credits/" title="credits">Credits</a></li>
+        <li><a href="/linee-guida/showcase/" title="credits">Showcase</a></li>
         <li><a href="/linee-guida/contatti/" title="credits">Contatti</a></li>
       </ul>
     </div>
@@ -372,7 +299,7 @@ applicando il CSS di Bootstrap e utilizzando le classi <code>container, row, col
   Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
 </p>
 
-<script src="/scripts/combined-b95a138e9e.js"></script>
+<script src="/scripts/combined-ec8acb4123.js"></script>
 
 <script>
 (function (b, o, i, l, e, r) {

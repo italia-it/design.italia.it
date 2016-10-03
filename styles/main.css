@@ -1394,7 +1394,7 @@ figure {
 img {
   vertical-align: middle; }
 
-.img-responsive, article img {
+.img-responsive, article img, .lg-showcase img {
   display: block;
   max-width: 100%;
   height: auto; }
@@ -6630,8 +6630,7 @@ ul.navmenu {
 .footer__logo, .navbar, .navbar h1, .nav-banner, .nav-banner img, .nav-banner p {
   -webkit-transition: all .25s ease-out;
           transition: all .25s ease-out;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); }
+  will-change: transform; }
 
 /*
  *  Offcanvas layout
@@ -7144,6 +7143,25 @@ article table {
 .lg-versione-alpha {
   padding: 5px 10px;
   padding: 0.5rem 1rem; }
+
+/*
+ *  Showcase
+ */
+.lg-showcase {
+  overflow: auto;
+  margin-bottom: 2em; }
+  .lg-showcase img {
+    float: left;
+    padding: 1em;
+    border: 1px solid #ddd;
+    margin-bottom: 1em; }
+  .lg-showcase img:hover {
+    cursor: pointer;
+    opacity: 0.8; }
+  @media (min-width: 768px) {
+    .lg-showcase img {
+      width: 45%;
+      margin-right: 2%; } }
 
 /*
  *  @FIXME: monkey patching navbar button

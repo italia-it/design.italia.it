@@ -19,15 +19,15 @@
     <meta name="description" content="Progettare il design dei siti web della Pubblica Amministrazione (versione alfa)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!--  
-        Titillium web font 
+    <!--
+        Titillium web font
        *********************
        Esclusivamente per il sito delle linee guida vengono importati tutti gli stili del web font;
        si consiglia di rivedere il seguente link limitando le famiglie del font utilizzate nel sito.
      -->
     <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css' />
-    
-    <link rel="stylesheet" href="/styles/combined-5c6544bc2c.css">
+
+    <link rel="stylesheet" href="/styles/combined-3e2c8ba3a7.css">
 
     <!--[if lt IE 9]>
     <script src="/scripts/combined-94bd8f59ad.i8.js"></script>
@@ -43,8 +43,8 @@
 
     <div class="skiplink sr-only">
       <ul>
-        <li><a accesskey="2" href="#main">Vai al Contenuto</a></li>
-        <li><a accesskey="3" href="#menu">Vai alla navigazione del sito (sommario delle linee guida)</a></li>
+        <li><a accesskey="2" href="/linee-guida/layout/mobile-first/#main">Vai al Contenuto</a></li>
+        <li><a accesskey="3" href="/linee-guida/layout/mobile-first/#menu">Vai alla navigazione del sito (sommario delle linee guida)</a></li>
         <li><a href="https://github.com/italia-it/designer.italia.it">Vai al repository GitHub delle Linee Guida</a></li>
 <!--        <li><a href="#footer">Vai al Footer</a></li>-->
       </ul>
@@ -66,7 +66,6 @@
     </div>
 
     <div class="container" id="page_top">
-
 
 <header class="navbar navbar-default navbar-fixed-top hidden-print" id="navbar">
 
@@ -154,6 +153,7 @@
     </li>
     <li><a href="/linee-guida/contenuti">Gestione contenuti</a></li>
     <li><a href="/linee-guida/infoarchitettura">Architettura dell'informazione</a></li>
+    <li><a href="/linee-guida/dispositivi">Dispositivi</a>
     <li><a href="/linee-guida/header">Header</a></li>
     <li><a href="/linee-guida/footer">Footer</a></li>
     <li><a href="/linee-guida/layout">Layout</a>
@@ -193,36 +193,19 @@
 
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
     <h2>Mobile first</h2>
-    <h3 id="responsive-web-design">Responsive Web Design</h3>
+    <p>L&#39;approccio <em>mobile first</em> consiste nel <strong>valutare in prima istanza la resa sui dispositivi mobili</strong>,
+per poi arricchire di elementi e funzionalità la composizione della pagina mano a mano che la <a href="/linee-guida/glossario">viewport</a> aumenta.</p>
+<h3 id="responsive-web-design">Responsive Web Design</h3>
 <div class="lg-callout lg-callout-must">
-<mark>SI DEVE</mark> Il sito web deve essere progettato e sviluppato con un approccio responsive con l’obiettivo di rendere disponibile un’ottimale esperienza di visione all’utente,
-facilità di lettura e navigazione con minime necessità di ridimensionare, spostare o scorrere, su qualunque dispositivo indipendentemente dalla risoluzione e dalla dimensione dello schermo.
+<mark>SI DEVE</mark> Il sito web deve essere progettato e sviluppato con un approccio <em>responsive</em> con l&#39;obiettivo di rendere disponibile un&#39;ottimale esperienza di visione all&#39;utente, facilità di lettura e navigazione con minime necessità di ridimensionare, spostare o scorrere, su qualunque dispositivo indipendentemente dalla risoluzione e dalla dimensione dello schermo.
 </div>
 
-<p>L&#39;approccio mobile first consiste nel valutare in prima istanza la resa sui dispositivi mobile, per poi arricchire di elementi e funzionalità la composizione della pagina mano a mano che la viewport aumenta.</p>
-<div class="lg-callout lg-callout-should">
-<mark>SI DOVREBBE</mark>
-Si consiglia lo stesso approccio anche nello sviluppo di qualsiasi sito web. Obbligarsi
-a progettare un’applicazione con ridotte disponibilità di spazio, di interazione, di velocità di caricamento,
- obbliga a stabilire delle priorità e a fare delle scelte che risulteranno utili anche all’usabilità del prodotto
-in generale. Nell’approccio mobile first si parte dall’essenziale. Presentare un contenuto su uno
-schermo piuttosto piccolo o con una linea che non ha elevata velocità di caricamento dati ci obbliga
-a dare priorità, a fare chiarezza, a togliere il superfluo. Man mano che lo schermo si fa più grande
-e il collegamento più veloce, i contenuti vengono arricchiti. Un utente seduto alla scrivania
-con un computer ha probabilmente più tempo e più possibilità di approfondire e navigare.
-Un utente collegato da smartphone ha forse l’urgenza di cercare quel contenuto dal luogo in cui si trova,
-senza aspettare di tornare a casa e arrivando all’essenziale il più velocemente possibile.
-</div>
-
-<p>Nel web design si sono adottati spesso gli approcci “graceful degradation” (decadimento parziale) o &quot;progressive enhancement&quot;
- (miglioramento progressivo). Si tratta di due risposte diverse alla stessa esigenza: rendere il contenuto accessibile su dispositivi diversi. Nel primo approccio ci si fa carico di verificare che il progetto, inizialmente pensato per i dispositivi più completi, resti navigabile anche man mano che si usano tecnologie più obsolete o meno interattive. Nel secondo, si parte da un nucleo solido e irrinunciabile di contenuti che vengono arricchiti man mano che il dispositivo diventa più potente e all’avanguardia.</p>
-<p>Tecnicamente il sito web deve rilevare quale dispositivo lo sta navigando. È possibile capire:</p>
-<ul>
-<li>lo user agent, ovvero quale browser e quale sistema operativo è in collegamento</li>
-<li>la risoluzione dello schermo, ovvero quanti pixel abbiamo a disposizione</li>
-<li>che tipo di device, ovvero se stiamo andando in stampa o su schermo</li>
-</ul>
-<p>Tecniche apposite come l’uso di media queries permettono di dare istruzioni ai CSS per comportarsi in modo diverso a seconda della risoluzione (breakpoints). Individuato il dispositivo, la risoluzione e il browser utilizzato, il contenuto (il nucleo) viene arricchito o meno da informazioni e funzioni aggiuntive.</p>
+<p>Nell&#39;approccio mobile first si parte dall&#39;essenziale.</p>
+<p>Obbligarsi a progettare un&#39;applicazione con ridotte disponibilità di spazio, di interazione, di velocità di caricamento costringe a stabilire delle priorità e a fare delle scelte che risulteranno utili all&#39;usabilità del prodotto.</p>
+<p>Man mano che lo schermo si fa più grande e il collegamento più veloce, i contenuti vengono arricchiti.
+Un utente seduto alla scrivania con un computer ha probabilmente più tempo e più possibilità di approfondire e navigare.
+Un utente collegato da smartphone ha forse l&#39;urgenza di cercare quel contenuto dal luogo in cui si trova,
+senza aspettare di tornare a casa e arrivando all&#39;essenziale il più velocemente possibile.</p>
 
   </article>
 
@@ -247,8 +230,8 @@ senza aspettare di tornare a casa e arrivando all’essenziale il più velocemen
       <div class="col-xs-2 col-sm-2 col-md-1">
         <img class="footer__logo" src="images/loghi/logo-it.svg"
              alt="">
-      </div>        
-      <div class="col-xs-10 col-sm-10 col-md-5">        
+      </div>
+      <div class="col-xs-10 col-sm-10 col-md-5">
         <p class="footer__title h3">Linee guida di design per i siti web della PA
           <small>Versione alfa</small></p>
       </div>
@@ -264,6 +247,7 @@ senza aspettare di tornare a casa e arrivando all’essenziale il più velocemen
         <li><a href="/linee-guida/privacy-policy/" title="privacy policy">Privacy</a></li>
         <li><a href="/linee-guida/note-legali/" title="note legali">Note legali</a></li>
         <li><a href="/linee-guida/credits/" title="credits">Credits</a></li>
+        <li><a href="/linee-guida/showcase/" title="credits">Showcase</a></li>
         <li><a href="/linee-guida/contatti/" title="credits">Contatti</a></li>
       </ul>
     </div>
@@ -276,7 +260,7 @@ senza aspettare di tornare a casa e arrivando all’essenziale il più velocemen
   Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
 </p>
 
-<script src="/scripts/combined-b95a138e9e.js"></script>
+<script src="/scripts/combined-ec8acb4123.js"></script>
 
 <script>
 (function (b, o, i, l, e, r) {

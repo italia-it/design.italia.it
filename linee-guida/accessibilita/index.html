@@ -19,15 +19,15 @@
     <meta name="description" content="Progettare il design dei siti web della Pubblica Amministrazione (versione alfa)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!--  
-        Titillium web font 
+    <!--
+        Titillium web font
        *********************
        Esclusivamente per il sito delle linee guida vengono importati tutti gli stili del web font;
        si consiglia di rivedere il seguente link limitando le famiglie del font utilizzate nel sito.
      -->
     <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css' />
-    
-    <link rel="stylesheet" href="/styles/combined-5c6544bc2c.css">
+
+    <link rel="stylesheet" href="/styles/combined-3e2c8ba3a7.css">
 
     <!--[if lt IE 9]>
     <script src="/scripts/combined-94bd8f59ad.i8.js"></script>
@@ -43,8 +43,8 @@
 
     <div class="skiplink sr-only">
       <ul>
-        <li><a accesskey="2" href="#main">Vai al Contenuto</a></li>
-        <li><a accesskey="3" href="#menu">Vai alla navigazione del sito (sommario delle linee guida)</a></li>
+        <li><a accesskey="2" href="/linee-guida/accessibilita/#main">Vai al Contenuto</a></li>
+        <li><a accesskey="3" href="/linee-guida/accessibilita/#menu">Vai alla navigazione del sito (sommario delle linee guida)</a></li>
         <li><a href="https://github.com/italia-it/designer.italia.it">Vai al repository GitHub delle Linee Guida</a></li>
 <!--        <li><a href="#footer">Vai al Footer</a></li>-->
       </ul>
@@ -66,7 +66,6 @@
     </div>
 
     <div class="container" id="page_top">
-
 
 <header class="navbar navbar-default navbar-fixed-top hidden-print" id="navbar">
 
@@ -154,6 +153,7 @@
     </li>
     <li><a href="/linee-guida/contenuti">Gestione contenuti</a></li>
     <li><a href="/linee-guida/infoarchitettura">Architettura dell'informazione</a></li>
+    <li><a href="/linee-guida/dispositivi">Dispositivi</a>
     <li><a href="/linee-guida/header">Header</a></li>
     <li><a href="/linee-guida/footer">Footer</a></li>
     <li><a href="/linee-guida/layout">Layout</a>
@@ -193,24 +193,27 @@
 
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
     <h2>Accessibilità</h2>
-    <p>Le pubbliche amministrazioni devono rispettare 12 requisiti tecnici riportati nell’Allegato A di accessibilità dei siti web previsti dal Decreto Ministeriale 8 luglio 2005.</p>
-<h4 id="standard-livello-aa">Standard livello AA</h4>
-<div class="lg-callout lg-callout-must">
-<mark>SI DEVE</mark> Il sito web deve raggiungere il livello di conformità AA così come definito nelle <a href="http://www.w3.org/Translations/WCAG20-it/">Web Content Accessibility Guidelines - WCAG 2.0</a>.
-Le 12 linee guida e i criteri di conformità delle WCAG 2.0 discendono dai quattro principi che fanno da pilastri all’accessibilità del Web.
+    <div class="lg-callout lg-callout-must">
+<mark>SI DEVE</mark>
+Le pubbliche amministrazioni devono rispettare i requisiti tecnici di accessibilità riportati nell&#39;<a href="http://www.agid.gov.it/dm-8-luglio-2005-allegato-A">Allegato A del Decreto Ministeriale 8 luglio 2005</a>) e successive modifiche.
 </div>
 
-<p>Principio 1: <strong>percepibile</strong></p>
-<p>Le informazioni e i componenti dell&#39;interfaccia utente devono essere presentati in modo che possano essere fruiti attraverso differenti canali sensoriali.</p>
-<p>Principio 2: <strong>utilizzabile</strong></p>
-<p>I componenti dell’interfaccia utente e i comandi in essa contenuti devono essere utilizzabili senza ingiustificati disagi o vincoli per l’utente.</p>
-<p>Principio 3: <strong>comprensibile</strong></p>
-<p>Gli utenti devono poter comprendere le modalità di funzionamento dell’interfaccia e le azioni in essa contenute necessarie per ottenere servizi e informazioni.</p>
-<p>Principio 4: <strong>robusto</strong></p>
-<p>Il contenuto deve essere abbastanza robusto da poter essere interpretato in modo affidabile da una vasta gamma di programmi utilizzati dall’utente, comprese le tecnologie assistive.</p>
+<p>I requisiti sono stati definiti sulla base dei Principi, delle linee guida e dei Criteri di successo contenuti nella <em>Recommendation</em> che il World Wide Web Consortium (W3C) - Web Accessibility Initiative (WAI) ha pubblicato l’11 dicembre 2008 e che contiene le Web Content Accessibility Guidelines 2.0 (WCAG 2.0)</p>
+<p>Quattro principi ispiratori, che fanno da pilastri all’accessibilità del Web, sono comuni alle WCAG 2.0 e all’allegato A:</p>
+<ol>
+<li><p><strong>percepibile</strong>: le informazioni e i componenti dell&#39;interfaccia utente devono essere presentati in modo che possano essere fruiti attraverso differenti canali sensoriali.</p>
+</li>
+<li><p><strong>utilizzabile</strong>: i componenti dell’interfaccia utente e i comandi in essa contenuti devono essere utilizzabili senza ingiustificati disagi o vincoli per l’utente.</p>
+</li>
+<li><p><strong>comprensibile</strong>: gli utenti devono poter comprendere le modalità di funzionamento dell’interfaccia e le azioni in essa contenute necessarie per ottenere servizi e informazioni.</p>
+</li>
+<li><p><strong>robusto</strong>: il contenuto deve essere abbastanza robusto da poter essere interpretato in modo affidabile da una vasta gamma di programmi utilizzati dall’utente, comprese le tecnologie assistive.</p>
+</li>
+</ol>
 <h4 id="requisiti-tecnici-di-accessibilit-">Requisiti tecnici di accessibilità</h4>
-<p>I requisiti sono stati definiti sulla base dei Principi, delle linee guida e dei Criteri di successo contenuti nella Recommendation che il World Wide Web Consortium (W3C) – Web Accessibility Initiative (WAI) ha pubblicato l’11 dicembre 2008 e che contiene le Web Content Accessibility Guidelines 2.0 (WCAG 2.0)
-I requisiti tecnici qui elencati sono collegati ai relativi punti di controllo per le verifiche di conformità (sito AgID).</p>
+<p>I punti di controllo per la verifica di conformità fanno riferimento ai Criteri di successo delle
+WCAG 2.0. Il rispetto dei seguenti requisiti corrisponde al livello di conformità AA delle WCAG 2.0.</p>
+<p>I requisiti tecnici qui elencati sono collegati ai relativi punti di controllo per le verifiche di conformità (sito AgID).</p>
 <p><a href="http://www.agid.gov.it/dm-8-luglio-2005-allegato-A#requisito1">Requisito 1</a> - <strong>Alternative testuali</strong>: fornire alternative testuali per qualsiasi contenuto di natura non testuale. Il testo alternativo deve essere fruito e trasformato secondo le necessità degli utenti; ad esempio convertito in stampa a caratteri ingranditi o in stampa Braille, letto mediante sintesi vocale, simboli o altra modalità.</p>
 <p><a href="http://www.agid.gov.it/dm-8-luglio-2005-allegato-A#requisito2">Requisito 2</a> – <strong>Contenuti audio, contenuti video, animazioni</strong>: fornire alternative testuali equivalenti per le informazioni veicolate da formati audio, formati video, formati contenenti immagini animate (animazioni), formati multisensoriali in genere.</p>
 <p><a href="http://www.agid.gov.it/dm-8-luglio-2005-allegato-A#requisito3">Requisito 3</a> - <strong>Adattabile</strong>: creare contenuti che possano essere presentati in modalità differenti (ad esempio, con layout più semplici), senza perdita di informazioni o struttura.</p>
@@ -257,8 +260,8 @@ dell&#39;<a href="http://www.agid.gov.it/dm-8-luglio-2005-allegato-A">allegato A
       <div class="col-xs-2 col-sm-2 col-md-1">
         <img class="footer__logo" src="images/loghi/logo-it.svg"
              alt="">
-      </div>        
-      <div class="col-xs-10 col-sm-10 col-md-5">        
+      </div>
+      <div class="col-xs-10 col-sm-10 col-md-5">
         <p class="footer__title h3">Linee guida di design per i siti web della PA
           <small>Versione alfa</small></p>
       </div>
@@ -274,6 +277,7 @@ dell&#39;<a href="http://www.agid.gov.it/dm-8-luglio-2005-allegato-A">allegato A
         <li><a href="/linee-guida/privacy-policy/" title="privacy policy">Privacy</a></li>
         <li><a href="/linee-guida/note-legali/" title="note legali">Note legali</a></li>
         <li><a href="/linee-guida/credits/" title="credits">Credits</a></li>
+        <li><a href="/linee-guida/showcase/" title="credits">Showcase</a></li>
         <li><a href="/linee-guida/contatti/" title="credits">Contatti</a></li>
       </ul>
     </div>
@@ -286,7 +290,7 @@ dell&#39;<a href="http://www.agid.gov.it/dm-8-luglio-2005-allegato-A">allegato A
   Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
 </p>
 
-<script src="/scripts/combined-b95a138e9e.js"></script>
+<script src="/scripts/combined-ec8acb4123.js"></script>
 
 <script>
 (function (b, o, i, l, e, r) {
