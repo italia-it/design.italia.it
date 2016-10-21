@@ -7051,7 +7051,7 @@ article h3,
 article h4,
 article h5,
 article h6 {
-  max-width: 31em; }
+  max-width: 32em; }
 
 abbr {
   border-bottom: none !important; }
@@ -7184,6 +7184,29 @@ article table {
   margin-right: 2rem; }
 
 /*
+ * Playbook servizi
+ * ----------------------
+ */
+.ico-playbookservizi {
+  width: 80px;
+  height: 80px;
+  float: right;
+  margin: 1em 1em 0 1em; }
+
+.icomini-playbookservizi {
+  width: 60px;
+  height: 60px; }
+
+.ico-container {
+  float: left; }
+
+:target:before {
+  content: "";
+  display: block;
+  height: 80px;
+  margin: -80px 0 0; }
+
+/*
  * Github corners
  * https://github.com/tholman/github-corners
  * ----------------------
@@ -7239,6 +7262,16 @@ article table {
   .github-corner .octo-arm {
     -webkit-animation: octocat-wave 560ms ease-in-out;
             animation: octocat-wave 560ms ease-in-out; } }
+
+.nextPrev div {
+  padding-top: 2em;
+  color: #06c; }
+
+.nextPrev-next {
+  text-align: right; }
+
+.nextPrev a {
+  font-size: 1.2em; }
 
 /*
  *  jQuery cookiebar
@@ -7311,7 +7344,7 @@ article table {
   text-transform: lowercase; }
 
 .lg-example-colore-blu-italia div {
-  max-width: 31em; }
+  max-width: 32em; }
   .lg-example-colore-blu-italia div .h3, .lg-example-colore-blu-italia div .h4 {
     margin: auto;
     max-width: 80%;
