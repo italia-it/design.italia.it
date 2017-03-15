@@ -7436,6 +7436,22 @@ article table {
   width: 100px;
   width: 10rem; }
 
+iframe.lg-example {
+  width: 100%;
+  max-width: 100%;
+  min-height: 15em;
+  border: none;
+  border-top: 2px solid #e0e0e0;
+  background: #fbfbfb;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em; }
+
+.lg-example-link {
+  min-width: 100%;
+  float: left;
+  clear: both;
+  margin-bottom: 1em; }
+
 .lg-lastmodified {
   color: #555;
   font-style: italic;
@@ -7457,6 +7473,8 @@ article table {
   margin: 2rem 0; }
 
 .lg-example-toggle {
+  float: right;
+  clear: both;
   margin-bottom: 20px;
   margin-bottom: 2rem; }
 

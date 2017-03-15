@@ -27,7 +27,7 @@
      -->
     <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css' />
 
-    <link rel="stylesheet" href="/styles/combined-36fce4d149.css">
+    <link rel="stylesheet" href="/styles/combined-fa069f0a53.css">
 
     <!--[if lt IE 9]>
     <script src="/scripts/combined-489b973f76.i8.js"></script>
@@ -126,8 +126,8 @@
 
   <ul class="nav navmenu">
     <li>
-      <a class="btn btn-link" href="https://github.com/italia-it/ita-bootstrap/archive/master.zip">
-        <i class="glyphicon glyphicon-download-alt"></i> scarica i componenti</a>
+      <a class="btn btn-link" href="https://italia.github.io/ita-web-toolkit/">
+        <i class="glyphicon glyphicon-download-alt"></i> web toolkit </a>
     </li>
     <li><a href="/">Il progetto</a></li>
 
@@ -208,122 +208,22 @@
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
     <h2>Bottoni</h2>
     <!-- ![](/images/tavola_14.png) -->
-<p>Di seguito sono riportate le dimensioni dei bottoni da utilizzare all’interno del sito
-sia nella versione mobile che desktop. I colori sono invece personalizzabili in base alla palette 
-colore che sarà stata individuata per ciascun sito web.</p>
-<pre><code class="lang-markup">&lt;div class=&quot;row&quot;&gt;
+<p>Di seguito un esempio dello stile da utilizzare per i bottoni.</p>
+<p>I colori sono personalizzabili in base alla palette che sarà stata individuata per ciascun sito web.
+È possibile impostare le dimensioni dei bottoni utilizzando le
+<a href="https://italia.github.io/ita-web-toolkit/components/detail/text--size.html">classi di utilità responsive</a>
+(<code>u-text-r-*</code>).</p>
+<iframe class="lg-example" src="https://italia.github.io/ita-web-toolkit/components/preview/button--default.html"></iframe>
 
-  &lt;div class=&quot;col-md-6&quot;&gt;
-    &lt;p class=&quot;text-center&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Invia richiesta&lt;/button&gt;
-    &lt;/p&gt;
-    &lt;div class=&quot;well well-sm&quot;&gt;
-      &lt;small&gt;&lt;strong&gt;BOTTONE NORMALE&lt;/strong&gt;&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+<iframe class="lg-example" src="https://italia.github.io/ita-web-toolkit/components/preview/button--info.html"></iframe>
 
-  &lt;div class=&quot;col-md-6&quot;&gt;
-    &lt;p class=&quot;text-center&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-default active&quot;&gt;Invia richiesta&lt;/button&gt;
-    &lt;/p&gt;
-    &lt;div class=&quot;well well-sm&quot;&gt;
-      &lt;small&gt;&lt;strong&gt;BOTTONE SELEZIONATO&lt;/strong&gt;&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+<iframe class="lg-example" src="https://italia.github.io/ita-web-toolkit/components/preview/button--danger.html"></iframe>
 
-&lt;/div&gt;
+<p><br></p>
 
-&lt;div class=&quot;row&quot;&gt;
-
-  &lt;div class=&quot;col-md-6&quot;&gt;
-    &lt;p class=&quot;text-center&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg btn-block&quot;&gt;Invia richiesta&lt;/button&gt;
-    &lt;/p&gt;
-    &lt;div class=&quot;well well-sm&quot;&gt;
-      &lt;small&gt;&lt;strong&gt;BOTTONE BLOCK LEVEL&lt;/strong&gt;&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;col-md-6&quot;&gt;
-    &lt;p class=&quot;text-center&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg btn-block active&quot;&gt;Invia richiesta&lt;/button&gt;
-    &lt;/p&gt;
-    &lt;div class=&quot;well well-sm&quot;&gt;
-      &lt;small&gt;&lt;strong&gt;BOTTONE BLOCK LEVEL SELEZIONATO&lt;/strong&gt;&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-
-  &lt;div class=&quot;col-md-6&quot;&gt;
-    &lt;p class=&quot;text-center&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-warning btn-lg btn-block&quot;&gt;Invia richiesta&lt;/button&gt;
-    &lt;/p&gt;
-    &lt;div class=&quot;well well-sm&quot;&gt;
-      &lt;small&gt;&lt;strong&gt;BOTTONE WARNING&lt;/strong&gt;&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;col-md-6&quot;&gt;
-    &lt;p class=&quot;text-center&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-lg btn-block&quot;&gt;Invia richiesta&lt;/button&gt;
-    &lt;/p&gt;
-    &lt;div class=&quot;well well-sm&quot;&gt;
-      &lt;small&gt;&lt;strong&gt;BOTTONE INFO&lt;/strong&gt;&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;
-</code></pre>
-<h4 id="bottoni-bootstrap">Bottoni Bootstrap</h4>
-<pre><code class="lang-markup">&lt;div class=&quot;row&quot;&gt;     
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg btn-block&quot;&gt;Block level button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg btn-block active&quot;&gt;Block level button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;     
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot;&gt;Large button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg active&quot;&gt;Large button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;     
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default active&quot;&gt;Default button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;     
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm&quot;&gt;Small button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm active&quot;&gt;Small button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;     
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs&quot;&gt;Extra small button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs active&quot;&gt;Extra small button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-<!-- ![](/images/tavola_15.png) -->
-<!-- ![](/images/tavola_16.png) -->
     
       <p class="clearfix lg-lastmodified">
-        l'ultima modifica di questa pagina risale a 3 mesi fa
+        l'ultima modifica di questa pagina risale a 15 giorni fa
       </p>
     
   </article>
@@ -379,7 +279,7 @@ colore che sarà stata individuata per ciascun sito web.</p>
   Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
 </p>
 
-<script src="/scripts/combined-eadd1a775c.js"></script>
+<script src="/scripts/combined-8ad2541075.js"></script>
 
 <script>
 (function (b, o, i, l, e, r) {

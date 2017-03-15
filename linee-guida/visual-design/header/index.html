@@ -27,7 +27,7 @@
      -->
     <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css' />
 
-    <link rel="stylesheet" href="/styles/combined-36fce4d149.css">
+    <link rel="stylesheet" href="/styles/combined-fa069f0a53.css">
 
     <!--[if lt IE 9]>
     <script src="/scripts/combined-489b973f76.i8.js"></script>
@@ -126,8 +126,8 @@
 
   <ul class="nav navmenu">
     <li>
-      <a class="btn btn-link" href="https://github.com/italia-it/ita-bootstrap/archive/master.zip">
-        <i class="glyphicon glyphicon-download-alt"></i> scarica i componenti</a>
+      <a class="btn btn-link" href="https://italia.github.io/ita-web-toolkit/">
+        <i class="glyphicon glyphicon-download-alt"></i> web toolkit </a>
     </li>
     <li><a href="/">Il progetto</a></li>
 
@@ -207,19 +207,19 @@
 
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
     <h2>Header</h2>
-    <p>Le indicazioni presenti in questa sezione vanno applicate nella progettazione di siti web
-per le amministrazioni locali (Regioni, Province, Comuni) e per enti e società a queste afferenti
-(siti tematici, società partecipate, consorzi, comunità, ...).</p>
+    <p>Le indicazioni presenti in questa sezione sono rivolte
+a tutte le pubbliche amministrazioni (centrali e locali) e gli enti e le società
+a loro afferenti (ad esempio società partecipate, consorzi, comunità);
+vanno applicate nella progettazione dei siti istituzionali e tematici.</p>
 <h3 id="contenuti">Contenuti</h3>
 <div class="lg-callout lg-callout-must">
 <mark>SI DEVE</mark>
 <p>La testata deve contenere le seguenti funzionalità:</p>
 <ul>
-<li>denominazione dell&#39;amministrazione / ente / società (link in formato testo che punta alla home page)</li>
+<li>denominazione dell&#39;amministrazione / ente / società / sito tematico (link <strong>in formato testuale</strong> che punta alla home page)</li>
 <li>barra di accesso al livello gerarchico superiore dell&#39;amministrazione (o all&#39;amministrazione afferente nel caso di un sito tematico)</li>
-<li>stemma / logo dell&#39;amministrazione / ente / società</li>
+<li>stemma / logo dell&#39;amministrazione / ente / società / sito tematico</li>
 <li>accesso al menu di navigazione</li>
-<li>campo di ricerca aperto</li>
 </ul>
 </div>
 
@@ -227,26 +227,25 @@ per le amministrazioni locali (Regioni, Province, Comuni) e per enti e società 
 <mark>SI PUÒ</mark>
 <p>La testata può inoltre contenere una o più delle seguenti funzionalità:</p>
 <ul>
-<li>accesso ai servizi</li>
+<li>campo di ricerca</li>
+<li>accesso diretto ai servizi (al form di login)</li>
 <li>link ai social network</li>
 <li>selezione lingue</li>
-<li>accesso tramite menu orizzontale alle principali sezioni dei contenuti</li>
 </ul>
 </div>
 
 <h3 id="componenti">Componenti</h3>
 <p>La struttura della testata è suddivisa in 3 aree funzionali.</p>
-<p><img src="/images/header/image08.png" alt=""></p>
+<p><img src="/images/header/image08.png" alt="struttura header"></p>
 <h4 id="1-area-appartenenza">1. Area appartenenza</h4>
-<p>Contiene l&#39;indicazione dell&#39;amministrazione di appartenenza e, se necessario, l&#39;accesso ai servizi, sulla parte destra.
-Il colore della barra superiore è sempre #30373D.</p>
-<p>Testo: bold (16px su desktop) in colore bianco.</p>
+<p>Contiene l&#39;indicazione dell&#39;amministrazione di appartenenza e, se necessario, l&#39;accesso ai servizi.
+Il colore della barra superiore è sempre #303030.</p>
+<p>Testo: bold-600 (16px su desktop) in colore bianco.</p>
 <h4 id="2-area-navigazione-e-intestazione">2. Area navigazione e intestazione</h4>
-<p>Contiene l&#39;accesso al menu di navigazione attraverso l&#39;icona &quot;burger&quot; a sinistra,
-lo stemma e la denominazione in formato testuale dell&#39;amministrazione / ente,
-il campo di ricerca e le eventuali selezioni dei social network e delle lingue.
-L&#39;area di navigazione può essere estesa dalla presenza del menu orizzontale.</p>
-<p>Testo: bold (32px su desktop).</p>
+<p>Contiene l&#39;accesso al menu di navigazione, lo stemma e la denominazione <strong>in formato testuale</strong>
+dell&#39;amministrazione / ente; eventualmente: il campo di ricerca e le selezioni dei social
+network e delle lingue. L&#39;area di navigazione può essere estesa dalla presenza del menu orizzontale.</p>
+<p>Testo del titolo: bold-700 (32px su desktop).</p>
 <div class="lg-callout lg-callout-could">
 <mark>SI PUÒ</mark>
 Il colore di fondo dell&#39;area navigazione e intestazione è personalizzabile
@@ -256,64 +255,63 @@ nell&#39;utilizzo dei <a href="/linee-guida/colori">colori</a>).
 
 <div class="lg-callout lg-callout-must">
 <mark>SI DEVE</mark>
-L&#39;icona burger deve sempre essere accompagnata nella versione desktop dall&#39;etichetta &quot;MENU&quot;.
+L&#39;icona burger deve sempre essere accompagnata nella versione desktop (laddove presente) dall&#39;etichetta &quot;MENU&quot;.
 </div>
 
-<p><img src="/images/header/image03.png" alt=""></p>
+<p><img src="/images/header/image03.png" alt="icona burger"></p>
 <div class="lg-callout lg-callout-should">
 <mark>SI DOVREBBE</mark>
 Lo stemma dovrebbe, preferibilmente, essere utilizzato nella versione al tratto, se presentato su sfondo diverso dal bianco.
 </div>
 
-<p><img src="/images/header/image06.png" alt=""></p>
+<p><img src="/images/header/image06.png" alt="esempio di logo"></p>
 <div class="lg-callout lg-callout-must">
 <mark>SI DEVE</mark>
 Le etichette per la selezione delle lingue seguono la definizione
 <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes">ISO-639-2</a> (3 lettere).
 </div>
 
-<p><img src="/images/header/image02.png" alt=""></p>
+<p><img src="/images/header/image02.png" alt="selezione delle lingue"></p>
 <div class="lg-callout lg-callout-must">
 <mark>SI DEVE</mark>
 Le icone per l&#39;accesso alle pagine social sono posizionate a destra della testata, sopra il campo di ricerca.
 Quando il numero delle icone social supera le 3 è possibile aggiungere un&#39;icona generica che dà accesso alle restanti.
 </div>
 
-<p><img src="/images/header/image10.png" alt=""></p>
+<p><img src="/images/header/image10.png" alt="icone social"></p>
 <h4 id="3-area-personalizzata">3. Area personalizzata</h4>
 <p>Lo spazio a disposizione per la personalizzazione è a discrezione dell&#39;amministrazione.</p>
 <div class="lg-callout lg-callout-should">
 <mark>SI DOVREBBE</mark>
 Per garantire una rapporto equilibrato fra le diverse aree funzionali della testata si consiglia di utilizzare
-per l&#39;Area personalizzata altezze multiple (3, 5, 7) dell&#39;Area di appartenenza (48px).
+per l&#39;Area personalizzata altezze multiple dell&#39;Area di appartenenza (di circa 3, 5 o 7 volte).
 </div>
 
 <h3 id="griglia">Griglia</h3>
 <p>L&#39;allineamento dei componenti della testata è basato su una griglia a 12 colonne
 e sui conseguenti adattamenti nelle versioni responsive secondo quanto specificato nella
 <a href="/linee-guida/layout/griglie">sezione griglie</a>.</p>
-<p>L&#39;intestazione dell&#39;amministrazione è posizionata, su desktop, a 32px dal massimo ingombro orizzontale dello stemma.</p>
-<h4 id="esempio-desktop-1440">Esempio desktop 1440</h4>
-<p><img src="/images/header/image09.png" alt=""></p>
-<h4 id="esempio-mobile-320">Esempio mobile 320</h4>
-<p><img src="/images/header/image12.png" alt=""></p>
+<h4 id="esempio-desktop">Esempio desktop</h4>
+<p><img src="/images/header/image09.png" alt="esempio testata desktop"></p>
+<h4 id="esempio-mobile">Esempio mobile</h4>
+<p><img src="/images/header/image12.png" alt="esempio testata mobile"></p>
 <h3 id="applicazioni">Applicazioni</h3>
-<h4 id="esempio-desktop-1440">Esempio desktop 1440</h4>
-<p><img src="/images/header/image00.png" alt=""></p>
-<h4 id="esempio-desktop-1440-con-aggiunta-del-menu-di-navigazione-orizzontale">Esempio desktop 1440 con aggiunta del menu di navigazione orizzontale</h4>
-<p><img src="/images/header/image14.png" alt=""></p>
+<h4 id="esempio-desktop">Esempio desktop</h4>
+<p><img src="/images/header/image00.png" alt="esempio testata desktop"></p>
+<h4 id="esempio-desktop-con-aggiunta-del-menu-di-navigazione-orizzontale">Esempio desktop con aggiunta del menu di navigazione orizzontale</h4>
+<p><img src="/images/header/image14.png" alt="esempio testata desktop con menu orizzontale"></p>
 <h4 id="esempio-testata-minimizzata">Esempio testata minimizzata</h4>
-<p><img src="/images/header/image07.png" alt=""></p>
-<h4 id="esempio-mobile-320">Esempio mobile 320</h4>
-<p><img src="/images/header/image11.png" alt=""></p>
-<h4 id="esempio-mobile-320-con-campo-ricerca-aperto">Esempio mobile 320 con campo ricerca aperto</h4>
-<p><img src="/images/header/image15.png" alt=""></p>
-<h4 id="esempio-mobile-320-minimizzato">Esempio mobile 320 minimizzato</h4>
-<p><img src="/images/header/image13.png" alt=""></p>
+<p><img src="/images/header/image07.png" alt="esempio di testata minimizzata"></p>
+<h4 id="esempio-mobile">Esempio mobile</h4>
+<p><img src="/images/header/image11.png" alt="esempio di testata su mobile"></p>
+<h4 id="esempio-mobile-con-campo-ricerca-aperto">Esempio mobile con campo ricerca aperto</h4>
+<p><img src="/images/header/image15.png" alt="esempio testata su mobile con campo di ricerca aperto"></p>
+<h4 id="esempio-mobile-minimizzato">Esempio mobile minimizzato</h4>
+<p><img src="/images/header/image13.png" alt="esempio su mobile minimizzato"></p>
 
     
       <p class="clearfix lg-lastmodified">
-        l'ultima modifica di questa pagina risale a 3 mesi fa
+        l'ultima modifica di questa pagina risale a 15 giorni fa
       </p>
     
   </article>
@@ -369,7 +367,7 @@ e sui conseguenti adattamenti nelle versioni responsive secondo quanto specifica
   Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
 </p>
 
-<script src="/scripts/combined-eadd1a775c.js"></script>
+<script src="/scripts/combined-8ad2541075.js"></script>
 
 <script>
 (function (b, o, i, l, e, r) {
